@@ -1,0 +1,20 @@
+### .env
+
+
+ POSTGRES_HOST  = "localhost"
+ POSTGRES_USERNAME  = "postgres"
+ POSTGRES_DB  = "iudagram"
+ POSTGRES_PASSWORD  = "123456"
+ DB_PORT  = 5432
+ PORT  = 3000
+ AWS_REGION  = ""  
+ AWS_PROFILE  = "default"  
+ AWS_BUCKET  = ""  
+ URL  = "http://localhost"
+ JWT_SECRET  = "oneworldlancer"
+
+
+ 	db_port:  process.env.DB_PORT ,
+
+
+	 ###POSTGRES_HOST  = "iudagram.cd5ypuobflkf.us-east-1.rds.amazonaws.com"
