@@ -72,7 +72,6 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             eb init udagram-api --platform Node.js --region us-east-1
-            eb create --sample udagram-api-dev
             echo "# Deploy"
             npm run deploy
             echo "# use EB"
