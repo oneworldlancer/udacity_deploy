@@ -69,11 +69,14 @@ jobs:
       - run:
           name: Envs
           # TODO: Install, build, deploy in both apps
-          command: |
+         command: |
             echo "# TODO: Install, build, deploy in both apps"
-            eb init udagram-api --platform node.js --region us-east-1
+            eb init udagram-api-dev --platform node.js --region us-east-1
+            echo "# Deploy"
             npm run deploy
+            echo "# use EB"
             eb use udagram-api-dev
+            echo "# EB setenvs"
             eb setenv POSTGRES_HOST=$POSTGRES_HOST DB_PORT=$DB_PORT POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET PORT=$PORT
 
 workflows:
